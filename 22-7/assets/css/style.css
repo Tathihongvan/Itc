@@ -1,0 +1,42 @@
+
+*
+{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title h1 {
+    color: #2657af;
+}
+
+
+#main{
+    width: 80%;
+}
+.main-title{
+    text-transform: uppercase;
+    color:rgb(220, 46, 46);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.navbar {
+    height: 40px;
+    background-color: #2657af;
+    
+}
+
+.navbar .menu {
+    list-style-type: none;
+    
+}
+
+.navbar .menu li {
+    float: left;
+    margin: 0px 4px 0 4px;
+}
+.navbar .menu li a{
+    color: #000;
+    text-decoration: none;
+    color:white;
+    line-height: 40px;
+    padding: 4px 8px 4px 8px; 
+}
