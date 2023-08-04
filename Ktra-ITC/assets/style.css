@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    height:150px;
+    background-color: cornflowerblue;
+    z-index: 1;
+}
+#header .logo {
+  text-align: center;
+}
+#header .logo img {
+    width:50px;
+    border-radius: 50%;
+}
+#header .logo .slogen {
+    font-weight: bold;
+    color:rgb(6, 62, 6);
+}
+
+#nav 
+{
+
+    display: inline-block;
+    text-align: center;
+}
+#nav , .subnav
+{
+    list-style-type: none;
+}
+#nav li
+{
+    
+    margin: 0 15px;
+    display:inline-block;
+    border:1px solid #fff;
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70%
+}
+#nav li
+{
+    position:relative;
+}
+#nav .subnav
+{
+
+    width: 300px;
+    display:none;
+    position:absolute;
+    top: -140%;
+    left:-50%;
+}
+#nav .subnav li {
+    text-align: center;
+    width:60px;
+    height: 50px;
+    margin: 0 0;
+    border:1px solid #fff;
+    border-radius:53% 47% 67% 33% / 84% 39% 61% 16%;
+}
+#nav .subnav li:hover a
+{
+    border-radius:53% 47% 67% 33% / 84% 39% 61% 16%;
+    background-color:rgb(253, 126, 80);
+}
+
+#nav li a 
+{
+    color:white;
+    text-decoration: none;
+    display:inline-block;
+    text-align: center;
+    padding: 10px;
+}
+#nav > li:hover > a{
+    background-color:yellow;
+}
+#slider {
+    margin-top: 130px;
+    background-color: gray;
+}
+#slider .banner {
+    width: 960px;
+    margin:0 auto;
+}
+#slider img {
+    
+    width:960px;
+    z-index: 9999;
+    border:15px solid #fff
+}
