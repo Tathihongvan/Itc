@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inputString"> <br><br>
+    <button onclick="chuanHoa()">Chuẩn hóa chuỗi</button><br><br>
+    <button onclick="DemKiTu()">Đếm kí tự trong chuỗi</button><br><br>
+    <button onclick="TimItc()">Tìm chuỗi itc</button><br><br>
+    <button onclick="ThayTheItc()">Thay thế chuỗi itc thành ITC</button><br><br>
+
+    <script>
+
+        function chuanHoa() {
+            let myString = document.getElementById('inputString').value;
+            let newString = myString.trim().split(/\s+/).join(' ');
+            console.log(`Chuỗi sau khi chuẩn hóa: ${newString}`);
+        }
+
+        function DemKiTu() {
+            let myString = document.getElementById('inputString').value;
+            let stringLength = myString.length;
+            console.log(`Độ dài của chuỗi: ${stringLength}`);
+        }
+
+        function timItc() {
+            let myString = document.getElementById('inputString').value;
+            var newString = myString.trim().split(/\s+/);
+            let dem = 0;
+            for (let i in newString) {
+                if (newString[i] === 'itc') {
+                    dem++;
+                }
+            }
+            if (dem == 0) {
+                console.log('Chuỗi không có itc');
+            }
+            else {
+                console.log(`Chuỗi có ${dem} lần chữ itc`);
+            }
+        }
+        function ThayTheItc() {
+            let myString = document.getElementById('inputString').value;
+            let newString = myString.replace(/itc/g, 'ITC');
+            console.log(newString);
+        }
+
+    </script>
+</body>
+
+</html>
